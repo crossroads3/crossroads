@@ -151,7 +151,7 @@ export default function Home() {
                   },
                   {
                     t: "Test Your Knowledge",
-                    d: "Go to the Quizzes section to check your understanding of cultural realities, traditions, and differences. Track your progress and challenge yourself.",
+                    d: "Go to the Quizzes section to check your understanding of cultural realities, traditions, and differences.",
                   },
                   {
                     t: "Discuss and Share",
@@ -177,14 +177,14 @@ export default function Home() {
                 {[
                   {
                     t: "Download Lesson Plans",
-                    d: "Complete lesson plans based on our authentic materials — your methodological toolkit.",
+                    d: "Lesson plans based on our authentic materials.",
                   },
                   {
                     t: "Use Assessment Criteria",
                     d: "Clear descriptors for different levels, helping you measure analysis, comparison, and respect for cultural differences.",
                   },
                   {
-                    t: "Read the Guidelines",
+                    t: "Working with authentic materials",
                     d: "Practical recommendations on adapting authentic texts, videos, and audio for different language levels.",
                   },
                 ].map((item) => (
