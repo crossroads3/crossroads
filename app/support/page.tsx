@@ -115,10 +115,7 @@ export default function SupportPage() {
           >
             {loading ? "Sending…" : "Send message"}
           </button>
-
-          <p className="mt-4 text-center text-xs text-ink-soft">
-            Demo project · messages are saved to a local JSON data store.
-          </p>
+          
         </form>
       </section>
     </>
