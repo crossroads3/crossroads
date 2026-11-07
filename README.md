@@ -29,20 +29,32 @@ npm run start
 | `/videos` | Embedded BBC Learning English & authentic native-speaker videos (A2–C1) with a quiz attached to each video |
 | `/audio` | Interactive audio player cards (placeholders) |
 | `/quizzes` | Interactive quizzes with instant feedback & saved results |
-| `/support` | Contact form → saved to JSON |
-| `/chat` | Community chat → saved to JSON |
+| `/support` | Contact form → saved to Supabase |
+| `/chat` | Community chat → saved to Supabase |
 | `/account` | Account page + login/registration modal (student / teacher) |
 
-## Data storage
+## Data storage (Supabase)
 
-All user-submitted data is written to `data/*.json` files at the project root:
+User-submitted data is stored in a **Supabase (PostgreSQL)** database, not local files. Four tables are used:
 
-- `users.json` — registered accounts (login/register via `/api/auth`)
-- `support.json` — support messages (`/api/support`)
-- `chat.json` — chat messages (`/api/chat`)
-- `quizzes.json` — quiz submissions (`/api/quizzes`)
+- `users` — registered accounts (login/register via `/api/auth`)
+- `support_messages` — support messages (`/api/support`)
+- `chat_messages` — chat messages (`/api/chat`)
+- `quiz_submissions` — quiz results (`/api/quizzes`)
 
-The `data/` folder is git-ignored and created automatically on first write. The storage layer lives in `lib/store.ts` — swap it for **SQLite** (`better-sqlite3`/Prisma) or **PostgreSQL** later without touching the API routes.
+### Setup
+
+1. Create a free project at **supabase.com**.
+2. Run the SQL in **`supabase/schema.sql`** in the Supabase SQL editor to create the tables and service-role policies.
+3. Copy `.env.example` to `.env.local` and fill in:
+   - `NEXT_PUBLIC_SUPABASE_URL` — your project URL (Dashboard → Settings → API)
+   - `SUPABASE_SERVICE_ROLE_KEY` — the `service_role` secret key (server-side only, never expose it)
+4. The storage layer lives in `lib/store.ts`; API routes call it. The site's static pages do not require the DB.
+
+### Deploying (free)
+
+Deploy on **Vercel** (recommended) or **Netlify** (free tier) and set the two environment variables there.
+Then everything — accounts, chat, support, saved quiz results — works for all visitors.
 
 ## Lesson plan files
 
