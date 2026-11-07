@@ -1,0 +1,16 @@
+[
+  {
+    "id": "chat_mw65oeoqc50u8",
+    "author": "Guest",
+    "text": "fhm",
+    "role": "system",
+    "createdAt": "2026-11-07T08:42:58.778Z"
+  },
+  {
+    "id": "chat_mw65oxdxagwc8",
+    "author": "Guest",
+    "text": "тут будут новости инглиш",
+    "role": "system",
+    "createdAt": "2026-11-07T08:43:23.013Z"
+  }
+]
