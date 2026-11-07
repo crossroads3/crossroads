@@ -38,8 +38,8 @@ const criteria: Criterion[] = [
       "Unable to be understood.",
       "Rarely makes sense when speaking language.",
       "Makes some grammar mistakes when speaking language.",
-      "Usually says [Language] words in the correct order and makes sense when speaking language.",
-      "Always says [Language] wores in ine correct order and makes sense when speaking language.",
+      "Usually says english words in the correct order and makes sense when speaking language.",
+      "Always says english wores in ine correct order and makes sense when speaking language.",
     ],
   },
   {
