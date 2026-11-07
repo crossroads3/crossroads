@@ -68,11 +68,11 @@ const criteria: Criterion[] = [
     name: "Cultural awareness",
     desc: "Your sensitivity to the target culture and appropriate register.",
     self: [
-      "I was unaware of cultural differences.",
-      "I noticed some cultural cues only with help.",
-      "I showed respect and some understanding of cultural norms.",
-      "I understood and adapted to cultural norms.",
-      "I was sensitive, adaptable and insightful about culture.",
+      "Being unaware of cultural differences.",
+      "Noticing some cultural cues only with help.",
+      "Showing respect and some understanding of cultural norms.",
+      "Understanding and adapting to cultural norms.",
+      "Being sensitive, adaptable and insightful about culture.",
     ],
   },
 ];
