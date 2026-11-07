@@ -143,7 +143,7 @@ export function AssessmentSection() {
           <h2 className="mt-3 font-serif text-4xl font-semibold text-ink">How progress is measured</h2>
           <p className="mt-4 text-lg text-ink-soft">
             A transparent, communicative rubric used across all Crossroads lessons. Click any criterion to see
-            self-assessment descriptors.
+            assessment descriptors.
           </p>
         </div>
 
