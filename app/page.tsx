@@ -109,7 +109,7 @@ export default function Home() {
           <div>
             <span className="text-sm font-semibold uppercase tracking-widest text-clay">About Crossroads</span>
             <h2 className="mt-3 font-serif text-4xl font-semibold text-ink">
-              A hub built at the crossing of two great languages
+              A hub built at the crossing of great language
             </h2>
           </div>
           <div className="space-y-4 text-lg leading-relaxed text-ink-soft">
