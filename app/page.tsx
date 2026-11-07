@@ -54,7 +54,7 @@ export default function Home() {
               <span className="italic text-clay">cross paths.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-              Crossroads is a resource hub for future teachers and curious learners of
+              Crossroads is a resource hub for teachers and curious learners of
               English and its many world voices. Explore ready-to-use lesson plans, authentic
               materials, quizzes and a community of fellow travellers on the language road.
             </p>
